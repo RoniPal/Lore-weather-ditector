@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="cloud.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Lore Weather Ditector</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body background="jpg.jpg">
+    
+<!--NAV-->
+<nav>
+    <label class="logo"><img src="cloud.png" alt=""><a href="#" id="logo">Lore Weather Ditector</a></label>
+    <ul>
+        <li><a href="about.html" target="_blank">About</a></li>
+    </ul>
+</nav>
+
+<!--MAIN-->
+
+<main>
+
+    <div id="search">
+        <input type="text" name="srh_loc" id="srh_loc" placeholder="Location">
+        <abbr title="Searh"><button id="srh_btn"><i class="fa-solid fa-magnifying-glass-location fa-2xl" style="color: #0091ff;"></i></button></abbr>
+    </div>
+
+    <div id="intro">
+        <div class="intro">
+        <h1>Wellcome</h1>
+        <p>This is my first weather app project. To check current weather of your place please search</p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="smile.png">  <!--Sorry for this kind of silliness, but i am hoppless at that time-->
+    </div>
+    </div>
+
+    <div id="weather">
+
+    <div id="location" class="weather">
+        <p><span id="loc"></span></p>
+        <p><span id="reg"></span></p>
+        <p><span id="coun"></span></p>
+        <p><span id="dt"></span></p>
+    </div>
+
+    <div id="temp" class="weather">
+        <p><span id="tem"></span></p>
+        <p><span id="mtemp"></span></p>
+        <p><span id="feel"></span></p>
+        <p><span id="humy"></span></p>
+    </div>
+
+    <div id="others" class="weather">
+        <p id="p_con"><img src="#"><span id="con"></span></p>
+        <p><span id="cld"></span></p>
+        <p><span id="uv"></span></p>
+        <p><span id="ws"></span></p>
+    </div>
+
+    </div>
+
+
+</main>
+
+
+
+<!--Footer-->
+
+<footer class="foot">
+    <span id="copy"> &copy 2024 Roni Pal</span>
+    <span id="connect">Conect Us :</span> 
+    <a href= "mailto : roniofficial41@gmail.com" target="_blank"><abbr title="Email"><i class="fa-solid fa-envelope fa-xl"></i></abbr></a>
+
+    <a href="https://linktr.ee/RoniPal" target="_blank"><abbr title="Portfolio"><i class="fa-solid fa-globe fa-xl"></i></abbr></a>
+
+
+    <a href="https://www.linkedin.com/in/roni-pal-140410295/" target="_blank"><abbr title="LinkedIn"><i class="fa-brands fa-linkedin fa-xl"></i></abbr></a>
+
+
+    <a href="https://github.com/RoniPal" target="_blank"><abbr title="GitHub"><i class="fa-brands fa-github fa-xl"></i></abbr></a>
+
+
+    <a href="https://x.com/Roni_Pal_999" target="_blank"><abbr title="X"><i class="fa-brands fa-x-twitter fa-xl"></i></abbr></a>
+
+</footer>
+<script src="weather.js"></script>
+
+</body>
+</html>

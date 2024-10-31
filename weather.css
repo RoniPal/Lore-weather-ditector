@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Sora';
+}
+
+body{
+    min-height: 100vh;  /*  this property for 'footer' element */
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Sora';
+    background-color: black;
+}
+
+
+/* ------------------- nav -----------------------------------------------*/
+
+
+nav{
+    background: black;
+    height: 68px;
+    width: 100%;
+    position: fixed;
+    border-bottom: 0.5px solid #00aeff;
+}
+
+
+label.logo{
+    font-size: 20px;
+    line-height: 68px;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+label.logo img{
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+#logo{
+    color: #00aeff;
+}
+
+#logo:hover{
+    background: none;
+}
+
+nav ul{
+    float: right;
+    margin-right: 80px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 68px;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    color : white;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 7px 13px;
+    border-radius: 5px;
+}
+
+a:hover{
+    color: white;
+    transition: 0.5s;
+    background: rgb(0, 0, 255);
+}
+
+
+
+@media(max-width: 600px){
+    label.logo{
+        font-size: 15px;
+    }
+
+    label.logo img{
+        width: 30px;
+        height: 30px;
+    }
+
+    nav ul{
+    margin-right: 0px;
+    }
+    
+    nav ul li a{
+        font-size: 12px;
+    }
+}
+
+/*-------------------------- footer ---------------------------*/
+.foot{
+    background-color: black;
+    position: sticky;          /* always in bottom footer property */
+    top: 100%;                 /* always in bottom footer property */
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 0.5px solid #00aeff;
+}
+
+.foot span{
+    color: white;
+}
+
+.foot a{
+    color: white;
+}
+
+.foot a:hover{
+    color: rgb(0, 0, 255);
+    background: none;
+    transition: 0.2s;
+}
+
+/*-------------------- footer responsive ------------------------------*/
+@media(max-width: 495px){
+
+    #connect{
+        display: none;
+    }
+
+    #copy{
+        font-size: 10px;
+    }
+}
+
+
+/*---------------------------MAiN-----------------------*/
+main{
+    padding-top: 100px;
+}
+
+/*search box & search btn*/
+#search{
+    background-color: transparent;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#srh_loc{
+    height: 40px;
+    width: 225px;
+    border-radius: 3px;
+    border: none;
+    padding-left: 10px;
+    background-color: white;
+}
+
+#srh_btn{
+    height: 40px;
+    width: 60px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 3px;
+    background-color: #ffdddf;
+    transition: all ease 0.2s;
+}
+
+#srh_btn:hover{
+    cursor: pointer;
+    background-color: 	#ffbdc2;
+}
+
+#srh_btn:active{
+    scale: 0.9;
+}
+
+/*weather details div*/
+
+#weather{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.weather{
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    border: 3px solid white;
+    padding: 10px 0 10px 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.weather p{
+    width: 100%;
+    text-align: center;
+}
+
+.weather p span{
+    font-weight: 900;
+}
+
+#tem{
+    font-size: 35px;
+}
+#p_con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#others p img{
+    height: 50px;
+    width: 50px;
+    line-height: 50%;
+}
+
+@media(max-width: 800px){
+    .weather{
+        margin: 30px;
+    }
+}
+
+/*----------intro------*/
+#intro{
+    color: white;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.intro{
+    height: 70%;
+    width: 300px;
+    border-radius: 15px;
+    border: 2px solid white;
+    padding: 15px;
+}
+
+.intro h1{
+    margin: 10px 0 30px 0;
+    text-align: center;
+    color: #00aeff;
+    font-weight: 700;
+}
+
+.intro p{
+    text-align: justify;
+    font-weight: 700;
+}
+
+.intro img{
+    height: 70px;
+    width: 70px;
+}
