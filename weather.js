@@ -73,3 +73,9 @@ let tem = document.getElementById("tem")
     }
     
 })
+
+
+//copyright year change
+let currentyear = document.getElementById("copyYear")
+actualYera = new Date()
+currentyear.innerHTML = actualYera.getFullYear()
