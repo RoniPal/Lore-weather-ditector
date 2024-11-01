@@ -9,6 +9,29 @@ weatherbox.style.display = "none"
 //show intro box
 intro.style.display = "flex"
 
+//Current location find----------------
+let currentLocationBtn = document.getElementById("currentLocationBtn")
+let currentLAT
+let currentLON
+
+//succsess call back
+function GetLocation(position){
+    console.log(position)
+    currentLAT = (position.coords.latitude)
+    currentLON = (position.coords.longitude)
+    searchbox.value = [currentLAT , currentLON]  //assign with search box
+}
+
+//failed callback
+function NotGetLocation(){
+    alert("There Is An Issue")
+}
+
+currentLocationBtn.addEventListener('click' , async () =>{
+   navigator.geolocation.getCurrentPosition(GetLocation , NotGetLocation)            //fetch the location
+})
+
+//Search btn event lisdter function
 searchbtn.addEventListener ('click' , async function () {
 
     if(searchbox.value.length === 0){
