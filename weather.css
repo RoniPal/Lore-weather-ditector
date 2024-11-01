@@ -271,3 +271,34 @@ main{
     height: 70px;
     width: 70px;
 }
+
+
+/*location btn------------------*/
+#locationBTN{
+    background-color: transparent;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#currentLocationBtn{
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+    transition: all ease 0.2s;
+    background-color: aqua;
+    font-weight: 800;
+    color: rgb(0, 0, 71);
+}
+
+#currentLocationBtn:hover{
+    cursor: pointer;
+    background-color: #00aeff;
+}
+
+#currentLocationBtn:active{
+    scale: 0.9;
+}
