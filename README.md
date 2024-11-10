@@ -1,0 +1,1 @@
+A weather website built with HTML, CSS, JavaScript, and API integration, offering real-time weather updates based on the user’s current location or entered location. Users can view temperature, humidity, and other weather details with a simple interface, making it easy to check accurate local or selected weather conditions quickly.
